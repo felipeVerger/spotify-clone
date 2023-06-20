@@ -6,11 +6,7 @@ import { FC, useEffect, useState } from 'react';
 import qs from 'query-string';
 import Input from './Modal/Input';
 
-interface SearchInputProps {
-  
-}
-
-const SearchInput: FC<SearchInputProps> = ({}) => {
+const SearchInput: FC = () => {
   const router = useRouter();
   const [value, setValue] = useState<string>("");
   const debounceValue = useDebounce<string>(value, 500);
