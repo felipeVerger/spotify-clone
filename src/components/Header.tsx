@@ -10,7 +10,7 @@ import { useSupabaseClient } from '@supabase/auth-helpers-react';
 import { useUser } from "@/hooks/useUser";
 import { toast } from 'react-hot-toast';
 
-import Button from "./Button";
+import Button from "./Shared/Button";
 import useAuthModal from "@/hooks/useAuthModal";
 
 interface HeaderProps {
