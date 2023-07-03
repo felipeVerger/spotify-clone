@@ -10,7 +10,7 @@ import { useSupabaseClient } from '@supabase/auth-helpers-react';
 import { useUser } from "@/hooks/useUser";
 import { toast } from 'react-hot-toast';
 
-import Button from "./Button";
+import Button from "./Shared/Button";
 import useAuthModal from "@/hooks/useAuthModal";
 
 interface HeaderProps {
@@ -36,7 +36,7 @@ const Header:React.FC<HeaderProps> = ({ children, className }) => {
         toast.success("Logged out!")
     }
   }  
-
+  
   return (
     <div className={twMerge(`h-fit bg-gradient-to-b from-emerald-800 p-6`, className)}>
         <div className="w-full mb-4 flex items-center justify-between">
